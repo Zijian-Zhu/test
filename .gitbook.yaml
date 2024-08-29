@@ -1,6 +1,6 @@
 root: ./docs-edge/en/
 structure:
   readme: ./overview/Overview.md
-  summary: ./summary.md
+  summary: ./Summary.md
 redirects:
   test: overview/Overview.md
