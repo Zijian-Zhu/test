@@ -20,6 +20,8 @@ On top of that, a dashboard is also provided for user convenience. It provides i
 
 \[Edge Solution]\(/img/edge-solution.png)
 
+<figure><img src="../../../.gitbook/assets/1.png" alt=""><figcaption></figcaption></figure>
+
 ## How Does Alluxio Edge Work - A Deeper Dive
 
 Alluxio Edge introduces a transformative approach by revamping the implementation of the data access interface. At the core of this innovation is the addition of a local cache layer. Alluxio Edge utilizes the local cache layer and takes over all data retrieval operations to optimize data access. When a data access request is initiated, the system first examines this local cache. If the requested data is available in the cache (a cache hit), it is swiftly loaded from there, thereby significantly reducing access times and enhancing overall system performance. In cases where the cache does not contain the requested data, the system then defaults to retrieving data from the underlying storage, be it HDFS or S3. This intelligent caching mechanism, therefore, ensures a more efficient, faster data processing workflow, bolstering the capabilities of Trino/PrestoDB in handling large-scale data operations.
